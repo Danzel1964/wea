@@ -10,7 +10,7 @@ def main(request):
 
 def search(request):
     if request.method == 'POST':
-        API_key = '6621546e1a94625a215c063e4320d66d'
+        API_key = '306a7f1c19072b2e6d9fb1c6e56b295e'
         city = request.POST.get('city')
         API = f'https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={API_key}'
         data = requests.get(API).json()
